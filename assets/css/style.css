@@ -322,6 +322,18 @@ form > h4 {
   border-radius: 5px;
   font-size: 20px;
   padding: 10px;
+  margin-bottom: 10px;
+}
+.button-submit {
+  font-size: 18px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #b9b4b4;
+}
+.button-submit:hover {
+  cursor: pointer;
+  background-color: #a9b2da;
 }
 .banner {
   border: 1px solid #edf3f3;

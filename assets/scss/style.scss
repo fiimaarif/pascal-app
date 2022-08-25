@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed&display=swap');
+
+$primary-font: 'Roboto Condensed', sans-serif;
+$color-hover: rgb(74, 86, 248);
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+h3 {
+  color: $color-hover;
+  letter-spacing: 3px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  position: relative;
+  font-family: $primary-font;
+  font-size: 25px;
+  text-align: center;
+}
+h3::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: $color-hover;
+  left: 45%;
+  bottom: -5px;
+  transition: 0.5s;
+}
+h3:hover::after {
+  width: 10%;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(3, 20, 51, 0.75), rgba(7, 8, 15, 0.75)),
+    url(/assets/image/hero.jpg);
+}
+nav {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+.active {
+  transition: 0.5s;
+  z-index: 2;
+  background-color: rgb(4, 9, 70);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.brand {
+  margin-left: 67px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: $primary-font;
+  color: white;
+}
+.menu {
+  margin-right: 80px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-family: $primary-font;
+}
+.menu li a {
+  color: white;
+  position: relative;
+}
+.menu li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: red;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+.menu li a:hover {
+  color: white;
+}
+.menu li a:hover::after {
+  width: 100%;
+}
+.hero-content {
+  margin-left: 27px;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  color: white;
+  transform: translateY(-50%);
+}
+.hero-content h1 {
+  font-weight: 600;
+  font-family: $primary-font;
+  font-size: 50px;
+  letter-spacing: 3px;
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+.hero-content h2 {
+  font-family: $primary-font;
+  margin-top: 5px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.hero-content p {
+  font-family: $primary-font;
+  font-size: 17px;
+  line-height: 25px;
+  margin-top: 15px;
+}
+.hero-content > .container > h2 > span {
+  color: red;
+}
+.tentang,
+.galeri {
+  margin: 30px 0;
+}
+.content-about {
+  display: flex;
+}
+article {
+  width: 60%;
+}
+.image {
+  width: 40%;
+}
+.image img {
+  width: 100%;
+}
+article p {
+  font-family: $primary-font;
+  font-size: 18px;
+  line-height: 30px;
+}
+.second-article {
+  margin-top: 20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  border: 2px solid rgb(223, 222, 222);
+  margin: 10px;
+  border-radius: 10px;
+  width: 220px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+.card img {
+  width: 90%;
+  margin: 10px;
+  height: 230px;
+}
+.card-body {
+  font-family: $primary-font;
+  text-align: center;
+}
+.contact-content {
+  display: flex;
+  height: 90vh;
+}
+.contact-left {
+  color: white;
+  padding: 70px 73px;
+  font-family: $primary-font;
+  width: 30%;
+  background: rgb(4, 9, 70);
+}
+.contact-left > h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+.contact-left > p {
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.contact-left > p > i {
+  margin-right: 10px;
+}
+.contact-left > .icon {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+}
+.contact-left > .icon a {
+  color: white;
+}
+.contact-left > .icon a:hover {
+  color: $color-hover;
+}
+form {
+  width: 70%;
+  padding: 70px 73px;
+  font-family: $primary-font;
+  background-color: rgb(237, 243, 243);
+}
+form > h4 {
+  color: rgb(4, 9, 31);
+  font-size: 20px;
+}
+.form-wrapper {
+  margin-top: 10px;
+}
+.form-group-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.form-group {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  margin: 5px 0;
+}
+.form-group-flex input {
+  width: 350px;
+  height: 40px;
+  border: 2px solid rgb(185, 180, 180);
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+.form-group input {
+  height: 40px;
+  border: 2px solid rgb(185, 180, 180);
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+.form-group textarea {
+  border: 2px solid rgb(185, 180, 180);
+  height: 150px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+footer {
+  height: 50vh;
+  background-color: rgb(5, 10, 29);
+}
+.footer-text p {
+  color: rgb(199, 196, 196);
+  font-family: $primary-font;
+}
+hr {
+  color: white;
+  margin: 20px 0;
+}
+.first-row {
+  display: flex;
+  justify-content: center;
+  font-family: $primary-font;
+  color: rgb(199, 196, 196);
+}
+.first-row .text1 {
+  width: 25%;
+  padding-top: 30px;
+}
+.first-row .text2 {
+  width: 25%;
+  padding-top: 30px;
+}
+.first-row .text3 {
+  width: 25%;
+  padding-top: 30px;
+}
+.first-row .text4 {
+  width: 25%;
+  padding-top: 30px;
+}
+.text1 .title {
+  color: white;
+  font-size: 20px;
+}
+.text2 .title {
+  color: white;
+  font-size: 20px;
+}
+.text3 .title {
+  color: white;
+  font-size: 20px;
+}
+.text4 .title {
+  color: white;
+  font-size: 20px;
+}
+.text1 > p {
+  margin: 18px 0;
+}
+.text2 > p {
+  margin: 18px 0;
+}
+.text3 > p {
+  margin: 18px 0;
+}
+.text4 > p {
+  margin: 18px 0;
+}
+.second-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-icon {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+.footer-icon a i {
+  font-size: 25px;
+  color: rgb(199, 196, 196);
+}

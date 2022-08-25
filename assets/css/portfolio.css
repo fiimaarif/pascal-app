@@ -121,3 +121,20 @@ h2 {
   font-weight: 500;
   margin-bottom: 10px;
 }
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content-left {
+    width: 100%;
+  }
+  .content-right {
+    width: 100%;
+  }
+}

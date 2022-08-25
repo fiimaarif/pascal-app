@@ -478,3 +478,77 @@ hr {
   font-size: 25px;
   color: #c7c4c4;
 }
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .brand {
+    margin-left: 10px;
+  }
+  .menu {
+    display: none;
+  }
+  .hero-content {
+    margin-left: 0;
+    width: 100%;
+  }
+  .content-about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  article {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .contact-content {
+    /* display: flex; */
+    display: none;
+    flex-wrap: wrap;
+  }
+  .contact-left {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+    padding: 10px;
+  }
+  .form-group-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-group-flex input {
+    width: 100%;
+  }
+  .banner {
+    /* display: none; */
+    width: 100%;
+  }
+  .banner-wrap {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+  }
+  .text-wrapper {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .text-wrapper > h1 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

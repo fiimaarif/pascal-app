@@ -120,7 +120,21 @@ nav {
 .menu li a:hover::after {
   width: 100%;
 }
-
+nav > .menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: white;
+  border-radius: 3px;
+}
 .hero-content {
   margin-left: 27px;
   width: 60%;
@@ -489,6 +503,13 @@ hr {
   }
   .menu {
     display: none;
+  }
+  nav > .menu-toggle {
+    margin-right: 10px;
+    display: block;
+    flex-direction: column;
+    height: 30px;
+    justify-content: space-between;
   }
   .hero-content {
     margin-left: 0;
